@@ -4,7 +4,7 @@ apipkg==1.5
 appdirs==1.4.4
 asgiref==3.2.7
 astroid==2.4.1
-atomicwrites==1.4.0; sys_platform == "win32"
+atomicwrites==1.4.0; sys_platform == "win32" or sys_platform == "darwin"
 attrs==19.3.0
 babel==2.8.0
 beautifulsoup4==4.7.1
@@ -135,7 +135,7 @@ pytest-vcr==1.0.2
 pytest-xdist==1.32.0
 python-dateutil==2.8.1
 python-magic==0.4.18
-python-magic-bin==0.4.14; sys_platform == "win32"
+python-magic-bin==0.4.14; sys_platform == "win32" or sys_platform == "darwin"
 python-slugify==1.2.6
 pytz==2020.1
 pyyaml==5.3.1
@@ -177,3 +177,5 @@ weasyprint==51
 webencodings==0.5.1
 wrapt==1.12.1
 yarl==1.4.2; python_version >= "3.6"
+django-redis==4.12.1
+django_opentracing==1.1.0
